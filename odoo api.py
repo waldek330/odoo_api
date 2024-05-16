@@ -11,11 +11,11 @@ import datetime
 import json
 
 
-production_api_key = "bf4fd965a1f8e2da56f62162d790d06cd5360620"
-stg_api_key = "446e6350f18b7454ad9e9a5b14d869b22c8a7b1f"
-url_stg = "https://sbx-nksgroup.odoo.com"
-db_stg = 'sbx-6699871'
-username = 'waldemar.lusiak@nksgroup.pl'
+production_api_key = ""
+stg_api_key = ""
+url_stg = "https://"
+db_stg = 'sbx-'
+username = ''
 password = ''
 
 serial_number = '76901T21600050'
@@ -28,8 +28,8 @@ def fail_log_email(*serial_scrapped, raspi_softer_number):
     raspi_softer_number = "Raspisofter 001"
     port = 465  # For SSL
     smtp_server = "smtp.gmail.com"
-    sender_email = "waldemar.lusiak@nksgroup.pl"  # Enter your address
-    receiver_email = "waldemar.lusiak@nksgroup.pl"  # Enter receiver address , admin@onservice.pl, remigiusz.zerbst@nksgroup.pl
+    sender_email = ""  # Enter your address
+    receiver_email = ""  # Enter receiver address , admin@onservice.pl, remigiusz.zerbst@nksgroup.pl
     password = ''
     subject = 'Error occured during software update on {}'.format(raspi_softer_number)
     message = """
